@@ -1,0 +1,43 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer{
+  .container{
+    @apply mx-auto px-[30px];
+  }
+}
+.button-style{
+  @apply  bg-[#6499E9]  rounded-[50px] text-[13px]  hover:bg-[#00A9FF] duration-[0.3s];
+}
+
+body{
+  background-color: #313866;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.grid-columns{
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+@media(max-width:300px){
+  .grid-columns{
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+  }
+}
+.moveRight-animation{
+  animation: moveRight-animation 0.8s infinite linear;
+}
+
+@keyframes moveRight-animation{
+  0%,100%{
+    margin-left: 3px;
+  }
+  50%{
+    margin-left: 15px;
+  }
+}
+
+
+
+
+
